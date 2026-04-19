@@ -1310,7 +1310,7 @@ async function handleSignup(e) {
   btn.disabled = true;
 
   try {
-    const res = await fetch('https://api.brevo.com/v3/contacts', {
+    const res = await fetch('https://corsproxy.io/?https://api.brevo.com/v3/contacts', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
