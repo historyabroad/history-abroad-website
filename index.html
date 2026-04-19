@@ -1310,30 +1310,20 @@ async function handleSignup(e) {
   btn.disabled = true;
 
   try {
-    const res = await fetch('https://corsproxy.io/?https://api.brevo.com/v3/contacts', {
+    const res = await fetch('/.netlify/functions/subscribe', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'api-key': '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'
-      },
-      body: JSON.stringify({
-        email: email,
-        listIds: [3],
-        updateEnabled: true,
-        attributes: {
-          SOURCE: 'historyabroad.com'
-        }
-      })
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, source: 'historyabroad.com' })
     });
-
-    if (res.status === 201 || res.status === 204) {
+    const data = await res.json();
+    if (res.ok && data.success) {
       btn.textContent = 'Subscribed ✓';
       btn.style.background = 'var(--green-accent)';
       btn.style.color = 'var(--cream)';
-      note.textContent = 'Welcome to History Abroad. Check your inbox for a confirmation.';
+      note.textContent = 'Welcome to History Abroad. Check your inbox soon.';
       document.getElementById('signup-email').value = '';
     } else {
-      throw new Error('Subscription failed');
+      throw new Error('failed');
     }
   } catch(err) {
     btn.textContent = 'Subscribe';
