@@ -1,0 +1,18 @@
+# History Abroad - Netlify Redirects
+# Social media subdomains and shortcuts
+
+# Social media subdomains
+/instagram    https://www.instagram.com/historyabroadglobalglobal    301
+/facebook     https://www.facebook.com/profile.php?id=61572361584482    301
+/pinterest    https://www.pinterest.com/historyabroad/    301
+/youtube      https://www.youtube.com/channel/UCjWpOCLX2U7v6zOUVIyUKDQ    301
+
+# Short aliases
+/ig           https://www.instagram.com/historyabroadglobalglobal    301
+/fb           https://www.facebook.com/profile.php?id=61572361584482    301
+/yt           https://www.youtube.com/channel/UCjWpOCLX2U7v6zOUVIyUKDQ    301
+/pin          https://www.pinterest.com/historyabroad/    301
+
+# Legal pages
+/privacy      /privacy-policy.html    301
+/terms        /terms-of-use.html      301

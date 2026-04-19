@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Use - History Abroad</title>
+<meta name="description" content="Terms of Use for History Abroad - historyabroad.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:wght@300;400;600&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold: #C9A84C;
+  --gold-light: #E8C97A;
+  --gold-dim: #8B6F2E;
+  --green-dark: #1A3025;
+  --green-accent: #3D6B4F;
+  --cream: #F5EDD8;
+  --cream-dim: #C8B99A;
+  --charcoal: #0D0F0C;
+  --charcoal-mid: #161A14;
+  --charcoal-light: #1E2319;
+  --text: #E8DCC8;
+  --text-dim: #9A8E7A;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--charcoal);
+  color: var(--text);
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0.4;
+}
+
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 1.2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(13,15,12,0.97);
+  border-bottom: 1px solid rgba(201,168,76,0.15);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.nav-logo img { height: 48px; width: auto; }
+
+.nav-logo-text {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--cream-dim);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--gold); }
+
+.nav-cta {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--charcoal);
+  background: var(--gold);
+  padding: 0.6rem 1.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.2s;
+}
+
+.nav-cta:hover { background: var(--gold-light); }
+
+.page-hero {
+  padding: 10rem 0 5rem;
+  background: linear-gradient(to bottom, var(--green-dark), var(--charcoal));
+  text-align: center;
+  border-bottom: 1px solid rgba(201,168,76,0.1);
+}
+
+.page-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.35em;
+  color: var(--gold);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.page-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  color: var(--cream);
+  margin-bottom: 1rem;
+}
+
+.page-date {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.content-wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 5rem 2rem 7rem;
+}
+
+.section-block { margin-bottom: 3.5rem; }
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(201,168,76,0.2);
+}
+
+p {
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+ul {
+  margin: 0.5rem 0 1rem 1.5rem;
+  color: var(--text-dim);
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.highlight-box {
+  background: var(--charcoal-light);
+  border-left: 3px solid var(--gold-dim);
+  padding: 1.2rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.highlight-box p { margin: 0; font-size: 0.95rem; }
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover { color: var(--gold-light); }
+
+footer {
+  background: var(--charcoal);
+  border-top: 1px solid rgba(201,168,76,0.1);
+  padding: 2rem 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-copy { font-size: 0.8rem; color: var(--text-dim); }
+
+.footer-legal { display: flex; gap: 1.5rem; }
+
+.footer-legal a { font-size: 0.8rem; color: var(--text-dim); }
+
+@media (max-width: 768px) {
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { display: none; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="History_Abroad_Logo.png" alt="History Abroad">
+    <span class="nav-logo-text">HISTORY<br>ABROAD</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#videos">Videos</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#explore">Explore</a></li>
+    <li><a href="index.html#guides">Guides</a></li>
+    <li><a href="index.html#tours">Tours</a></li>
+    <li><a href="index.html#shop">Shop</a></li>
+  </ul>
+  <a href="index.html#signup" class="nav-cta">Subscribe</a>
+</nav>
+
+<div class="page-hero">
+  <span class="page-eyebrow">Legal</span>
+  <h1 class="page-title">Terms of Use</h1>
+  <p class="page-date">Effective date: January 1, 2026 - Last updated: April 2026</p>
+</div>
+
+<div class="content-wrap">
+
+  <div class="highlight-box">
+    <p>By accessing or using historyabroad.com or historyabroad.app, you agree to be bound by these Terms of Use. Please read them carefully. If you do not agree, please do not use our Site.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>1. About History Abroad</h2>
+    <p>History Abroad ("we," "us," or "our") operates historyabroad.com and historyabroad.app, a travel and history content platform featuring videos, guides, and related media documenting culture, nature, architecture, and history from around the world. History Abroad is operated as a sole proprietorship under the laws of the United States.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>2. Acceptance of Terms</h2>
+    <p>By visiting, browsing, or using this Site in any way, you confirm that you are at least 13 years of age, that you have read and understood these Terms, and that you agree to be legally bound by them. These Terms apply to all visitors, subscribers, and purchasers.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>3. Intellectual Property and Content Ownership</h2>
+    <p>All content on History Abroad - including but not limited to videos, photographs, written descriptions, graphics, logos, and the History Abroad name and logo - is the exclusive property of History Abroad and is protected by United States and international copyright laws.</p>
+    <p>You may not, without our prior written permission:</p>
+    <ul>
+      <li>Copy, reproduce, distribute, or republish any content from this Site</li>
+      <li>Use any content for commercial purposes</li>
+      <li>Modify, adapt, or create derivative works from our content</li>
+      <li>Remove or alter any copyright, trademark, or other proprietary notices</li>
+      <li>Scrape, crawl, or use automated tools to extract content from this Site</li>
+    </ul>
+    <p>Personal, non-commercial sharing of links to our content is permitted and encouraged.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>4. Digital Products and Purchases</h2>
+    <p>History Abroad offers digital products including travel guides and itineraries for purchase. By making a purchase, you agree to the following:</p>
+    <ul>
+      <li>All sales of digital products are final. Due to the nature of digital goods, we do not offer refunds once a product has been downloaded or accessed.</li>
+      <li>Digital products are licensed for personal, non-commercial use only. You may not resell, redistribute, or share purchased products with others.</li>
+      <li>Payments are processed securely through Stripe. By purchasing, you also agree to Stripe's terms of service.</li>
+      <li>We reserve the right to update digital products and will provide updated versions to existing purchasers where reasonably possible.</li>
+    </ul>
+  </div>
+
+  <div class="section-block">
+    <h2>5. YouTube Content</h2>
+    <p>History Abroad publishes video content on YouTube. Videos embedded on this Site are subject to YouTube's Terms of Service in addition to these Terms. We are not responsible for YouTube's platform policies, availability, or changes to their service.</p>
+    <p>All video content produced by History Abroad remains the intellectual property of History Abroad. Downloading, reproducing, or redistributing our YouTube videos without permission is prohibited.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>6. Affiliate Links and Third-Party Links</h2>
+    <p>This Site may contain affiliate links to third-party products and services, including but not limited to travel booking platforms, accommodation providers, and travel gear retailers. If you click an affiliate link and make a purchase, we may earn a commission at no additional cost to you.</p>
+    <p>We only recommend products and services we genuinely believe are relevant and useful to our audience. However, we are not responsible for the content, accuracy, or practices of any third-party websites. Visiting third-party sites is at your own risk.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>7. Accuracy of Information</h2>
+    <p>History Abroad strives to provide accurate and up-to-date information about historical sites, travel destinations, local customs, and cultural practices. However, we make no warranties or representations regarding the completeness, accuracy, or reliability of any information on this Site.</p>
+    <p>Travel information, entry requirements, local laws, and customs can change. You are solely responsible for verifying current conditions, regulations, and requirements before traveling. History Abroad is not liable for any loss, injury, or inconvenience arising from reliance on information provided on this Site.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>8. Disclaimer of Warranties</h2>
+    <p>This Site and all content are provided "as is" and "as available" without warranties of any kind, either express or implied. To the fullest extent permitted by law, History Abroad disclaims all warranties including implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+    <p>We do not warrant that the Site will be uninterrupted, error-free, or free of viruses or other harmful components.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>9. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by applicable law, History Abroad shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of, or inability to use, this Site or its content - including but not limited to damages for loss of profits, data, or goodwill.</p>
+    <p>In no event shall our total liability to you exceed the amount you paid us, if any, in the twelve months preceding the claim.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>10. User Conduct</h2>
+    <p>By using this Site, you agree not to:</p>
+    <ul>
+      <li>Use the Site for any unlawful purpose or in violation of any applicable regulations</li>
+      <li>Attempt to gain unauthorized access to any part of the Site or its systems</li>
+      <li>Interfere with or disrupt the integrity or performance of the Site</li>
+      <li>Impersonate History Abroad or misrepresent your affiliation with us</li>
+      <li>Use the Site to transmit unsolicited commercial communications</li>
+      <li>Harvest or collect personal information about other users</li>
+    </ul>
+  </div>
+
+  <div class="section-block">
+    <h2>11. Email Communications</h2>
+    <p>If you subscribe to our email newsletter, you consent to receive periodic emails about new content, travel guides, and related updates. Every email will include a clear and easy way to unsubscribe. We comply with the CAN-SPAM Act and will honor all unsubscribe requests promptly.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>12. Privacy</h2>
+    <p>Your use of this Site is also governed by our <a href="privacy-policy.html">Privacy Policy</a>, which is incorporated into these Terms by reference. Please review our Privacy Policy to understand our data practices.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>13. Governing Law and Dispute Resolution</h2>
+    <p>These Terms of Use are governed by and construed in accordance with the laws of the United States. Any disputes arising from these Terms or your use of the Site shall be resolved through good-faith negotiation. If negotiation is unsuccessful, disputes shall be subject to binding arbitration under the rules of the American Arbitration Association.</p>
+    <p>You agree that any claim must be brought in your individual capacity and not as a plaintiff or class member in any class action proceeding.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>14. Modifications to Terms</h2>
+    <p>We reserve the right to update or modify these Terms at any time without prior notice. Changes will be effective immediately upon posting to the Site. The "Last updated" date at the top of this page will reflect when changes were made. Your continued use of the Site after any changes constitutes your acceptance of the updated Terms.</p>
+    <p>We encourage you to review these Terms periodically to stay informed of any updates.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>15. Severability</h2>
+    <p>If any provision of these Terms is found to be unenforceable or invalid under applicable law, that provision will be limited or eliminated to the minimum extent necessary, and the remaining provisions will continue in full force and effect.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>16. Contact</h2>
+    <p>If you have questions about these Terms of Use, please contact us at:</p>
+    <p><a href="/cdn-cgi/l/email-protection#80e3efeef4e1e3f4c0e8e9f3f4eff2f9e1e2f2efe1e4aee3efed"><span class="__cf_email__" data-cfemail="e685898892878592a68e8f959289949f878494898782c885898b">[email&#160;protected]</span></a></p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 History Abroad. All rights reserved.</span>
+    <div class="footer-legal">
+      

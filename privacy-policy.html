@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - History Abroad</title>
+<meta name="description" content="Privacy Policy for History Abroad - historyabroad.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:wght@300;400;600&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold: #C9A84C;
+  --gold-light: #E8C97A;
+  --gold-dim: #8B6F2E;
+  --green-dark: #1A3025;
+  --green-accent: #3D6B4F;
+  --cream: #F5EDD8;
+  --cream-dim: #C8B99A;
+  --charcoal: #0D0F0C;
+  --charcoal-mid: #161A14;
+  --charcoal-light: #1E2319;
+  --text: #E8DCC8;
+  --text-dim: #9A8E7A;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--charcoal);
+  color: var(--text);
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0.4;
+}
+
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 1.2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(13,15,12,0.97);
+  border-bottom: 1px solid rgba(201,168,76,0.15);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.nav-logo img { height: 48px; width: auto; }
+
+.nav-logo-text {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  color: var(--gold);
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--cream-dim);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--gold); }
+
+.nav-cta {
+  font-family: 'Cinzel', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--charcoal);
+  background: var(--gold);
+  padding: 0.6rem 1.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.2s;
+}
+
+.nav-cta:hover { background: var(--gold-light); }
+
+.page-hero {
+  padding: 10rem 0 5rem;
+  background: linear-gradient(to bottom, var(--green-dark), var(--charcoal));
+  text-align: center;
+  border-bottom: 1px solid rgba(201,168,76,0.1);
+}
+
+.page-eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.35em;
+  color: var(--gold);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.page-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  color: var(--cream);
+  margin-bottom: 1rem;
+}
+
+.page-date {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.content-wrap {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 5rem 2rem 7rem;
+}
+
+.section-block {
+  margin-bottom: 3.5rem;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(201,168,76,0.2);
+}
+
+p {
+  color: var(--text-dim);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+ul {
+  margin: 0.5rem 0 1rem 1.5rem;
+  color: var(--text-dim);
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.highlight-box {
+  background: var(--charcoal-light);
+  border-left: 3px solid var(--gold-dim);
+  padding: 1.2rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.highlight-box p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover { color: var(--gold-light); }
+
+footer {
+  background: var(--charcoal);
+  border-top: 1px solid rgba(201,168,76,0.1);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+.footer-legal {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-legal a {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+@media (max-width: 768px) {
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { display: none; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="History_Abroad_Logo.png" alt="History Abroad">
+    <span class="nav-logo-text">HISTORY<br>ABROAD</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#videos">Videos</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#explore">Explore</a></li>
+    <li><a href="index.html#guides">Guides</a></li>
+    <li><a href="index.html#tours">Tours</a></li>
+    <li><a href="index.html#shop">Shop</a></li>
+  </ul>
+  <a href="index.html#signup" class="nav-cta">Subscribe</a>
+</nav>
+
+<div class="page-hero">
+  <span class="page-eyebrow">Legal</span>
+  <h1 class="page-title">Privacy Policy</h1>
+  <p class="page-date">Effective date: January 1, 2026 - Last updated: April 2026</p>
+</div>
+
+<div class="content-wrap">
+
+  <div class="highlight-box">
+    <p>History Abroad is committed to protecting your privacy. This policy explains what information we collect, how we use it, and your rights regarding that information. We do not sell your personal data to anyone, ever.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>1. Who We Are</h2>
+    <p>History Abroad operates the website historyabroad.com and historyabroad.app (the "Site"), as well as associated social media channels and YouTube content. History Abroad is operated as a sole proprietorship based in the United States.</p>
+    <p>For privacy-related questions, you may contact us at: <a href="/cdn-cgi/l/email-protection#91f2feffe5f0f2e5d1f9f8e2e5fee3e8f0f3e3fef0f5bff2fefc"><span class="__cf_email__" data-cfemail="fd9e9293899c9e89bd95948e89928f849c9f8f929c99d39e9290">[email&#160;protected]</span></a></p>
+  </div>
+
+  <div class="section-block">
+    <h2>2. Information We Collect</h2>
+    <p>We only collect information that is necessary to operate the Site and provide our services.</p>
+    <p><strong style="color: var(--cream);">Information you provide directly:</strong></p>
+    <ul>
+      <li>Email address when you subscribe to our newsletter</li>
+      <li>Payment information when purchasing digital products (processed securely by Stripe - we do not store card details)</li>
+      <li>Any information you voluntarily submit through contact forms</li>
+    </ul>
+    <p><strong style="color: var(--cream);">Information collected automatically:</strong></p>
+    <ul>
+      <li>Standard web server logs including IP address, browser type, pages visited, and time of visit</li>
+      <li>Cookies and similar tracking technologies used by Google Analytics to understand how visitors use the Site</li>
+      <li>YouTube embed interactions governed by YouTube's own privacy policy</li>
+    </ul>
+  </div>
+
+  <div class="section-block">
+    <h2>3. How We Use Your Information</h2>
+    <p>We use the information we collect for the following purposes only:</p>
+    <ul>
+      <li>Sending newsletters and content updates you have subscribed to</li>
+      <li>Processing purchases and delivering digital products</li>
+      <li>Improving the Site through aggregate analytics data</li>
+      <li>Responding to inquiries you send us</li>
+      <li>Complying with legal obligations</li>
+    </ul>
+    <p>We do not use your information for automated profiling, targeted advertising on our Site, or any purpose beyond what is listed above.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>4. Cookies</h2>
+    <p>Our Site uses cookies for the following purposes:</p>
+    <ul>
+      <li><strong style="color: var(--cream);">Analytics cookies</strong> - Google Analytics helps us understand traffic patterns. This data is aggregated and anonymous.</li>
+      <li><strong style="color: var(--cream);">Functional cookies</strong> - Used to remember preferences and improve your experience.</li>
+      <li><strong style="color: var(--cream);">Third-party cookies</strong> - YouTube embeds on our site may set their own cookies, governed by Google's privacy policy.</li>
+    </ul>
+    <p>You can disable cookies in your browser settings at any time. Note that some Site functionality may be affected.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>5. Third-Party Services</h2>
+    <p>We use the following third-party services which have their own privacy policies:</p>
+    <ul>
+      <li><strong style="color: var(--cream);">Google Analytics</strong> - Website traffic analysis</li>
+      <li><strong style="color: var(--cream);">YouTube (Google)</strong> - Video hosting and embedding</li>
+      <li><strong style="color: var(--cream);">Stripe</strong> - Payment processing</li>
+      <li><strong style="color: var(--cream);">Brevo (formerly Sendinblue)</strong> - Email newsletter delivery</li>
+      <li><strong style="color: var(--cream);">Netlify</strong> - Website hosting</li>
+    </ul>
+    <p>We are not responsible for the privacy practices of these third parties. We encourage you to review their privacy policies directly.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>6. Data Sharing and Sale</h2>
+    <p>We do not sell, rent, or trade your personal information to any third party.</p>
+    <p>We may share information only in the following limited circumstances:</p>
+    <ul>
+      <li>With service providers listed above, strictly to operate our services</li>
+      <li>When required by law, regulation, or valid legal process</li>
+      <li>To protect the rights, property, or safety of History Abroad or others</li>
+    </ul>
+  </div>
+
+  <div class="section-block">
+    <h2>7. Data Retention</h2>
+    <p>We retain your personal information only as long as necessary for the purposes described in this policy, or as required by law. Email subscribers may unsubscribe at any time using the link included in every email. Upon unsubscribing, your email address will be removed from our mailing list within a reasonable time.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>8. Data Security</h2>
+    <p>We take reasonable technical and organizational measures to protect your personal information against unauthorized access, loss, or misuse. All payment processing is handled by Stripe, which maintains PCI DSS compliance. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.</p>
+    <p>In the event of a data breach affecting Wyoming residents, we will notify affected individuals as required under Wyoming's breach notification law (Wyo. Stat. 40-12-501 et seq.) without unreasonable delay.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>9. Children's Privacy</h2>
+    <p>History Abroad is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe we have inadvertently collected such information, please contact us immediately and we will delete it promptly.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>10. Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Request access to the personal information we hold about you</li>
+      <li>Request correction of inaccurate personal information</li>
+      <li>Request deletion of your personal information</li>
+      <li>Unsubscribe from our email list at any time</li>
+      <li>Opt out of Google Analytics tracking by using the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank">Google Analytics Opt-out Browser Add-on</a></li>
+    </ul>
+    <p>To exercise any of these rights, contact us at <a href="/cdn-cgi/l/email-protection#4c2f2322382d2f380c24253f38233e352d2e3e232d28622f2321"><span class="__cf_email__" data-cfemail="c2a1adacb6a3a1b682aaabb1b6adb0bba3a0b0ada3a6eca1adaf">[email&#160;protected]</span></a>. We will respond within 30 days.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>11. International Visitors</h2>
+    <p>History Abroad is operated from the United States. If you are visiting from the European Union, United Kingdom, or other regions with data protection laws, please be aware that your information may be transferred to and processed in the United States. By using our Site, you consent to this transfer.</p>
+    <p>We make reasonable efforts to comply with GDPR principles for visitors from the EU, including data minimization, purpose limitation, and honoring data subject rights requests.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>12. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. When we make changes, we will update the "Last updated" date at the top of this page. We encourage you to review this policy periodically. Continued use of the Site after changes constitutes acceptance of the updated policy.</p>
+  </div>
+
+  <div class="section-block">
+    <h2>13. Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:</p>
+    <p><a href="/cdn-cgi/l/email-protection#b8dbd7d6ccd9dbccf8d0d1cbccd7cac1d9dacad7d9dc96dbd7d5"><span class="__cf_email__" data-cfemail="fa9995948e9b998eba9293898e9588839b
